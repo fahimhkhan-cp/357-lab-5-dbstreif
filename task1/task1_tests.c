@@ -7,8 +7,10 @@ void test1() {
    char *expected = "hello there";
 
    str_lower(input, result);
-
    checkit_string(result, expected);
+
+    str_lower_mutate(input);
+    checkit_string(input, expected);
 }
 
 int main(void) {
